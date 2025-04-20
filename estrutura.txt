@@ -1,0 +1,64 @@
+.
+├── CorpConnec
+│   ├── HELP.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   └── resources
+│   │   │       ├── application.properties
+│   │   │       ├── application-secret.properties
+│   │   │       ├── estrutura.txt
+│   │   │       ├── private_key.pem
+│   │   │       ├── public_key.pem
+│   │   │       ├── static
+│   │   │       └── templates
+│   │   └── test
+│   │       └── java
+│   │           └── com
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   ├── application-secret.properties
+│       │   ├── com
+│       │   │   └── chatcorporativo
+│       │   ├── estrutura.txt
+│       │   ├── private_key.pem
+│       │   └── public_key.pem
+│       └── generated-sources
+│           └── annotations
+├── CorpConnecui
+│   ├── node_modules
+│   │   ├── abab
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │[...]
+│   │   └── yocto-queue
+│   │       ├── index.d.ts
+│   │       ├── index.js
+│   │       ├── license
+│   │       ├── package.json
+│   │       └── readme.md
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── README.md
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── index.css
+│       ├── index.js
+│       ├── logo.svg
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+└── estrutura.txt
