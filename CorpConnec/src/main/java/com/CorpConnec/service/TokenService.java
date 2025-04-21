@@ -80,4 +80,5 @@ public class TokenService {
         KeyFactory keyFactory = KeyFactory.getInstance(RSA_ALGORITHM);
         return (RSAPrivateKey) keyFactory.generatePrivate(keySpec);
     }
+
 }

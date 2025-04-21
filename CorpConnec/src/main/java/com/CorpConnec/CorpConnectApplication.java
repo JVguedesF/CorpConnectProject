@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CorpConnecApplication {
+public class CorpConnectApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CorpConnecApplication.class, args);
+        SpringApplication.run(CorpConnectApplication.class, args);
     }
 
 }

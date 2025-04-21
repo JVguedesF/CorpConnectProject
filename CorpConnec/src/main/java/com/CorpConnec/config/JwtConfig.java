@@ -55,12 +55,14 @@ public class JwtConfig {
     public JwtAuthenticationConverter jwtAuthenticationConverter() {
         JwtAuthenticationConverter converter = new JwtAuthenticationConverter();
         converter.setJwtGrantedAuthoritiesConverter(jwt -> {
-            List<String> roles = jwt.getClaimAsStringList("roles");
-            return roles != null
-                    ? roles.stream()
-                    .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
-                    .collect(Collectors.toList())
-                    : List.of();
+            Object roles = jwt.getClaim("roles");
+            if (roles instanceof List<?>) {
+                return ((List<?>) roles).stream()
+                        .map(Object::toString)
+                        .map(role -> new SimpleGrantedAuthority("ROLE_" + role))
+                        .collect(Collectors.toList());
+            }
+            return List.of();
         });
         return converter;
     }
